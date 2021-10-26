@@ -55,13 +55,16 @@ URL to view allure reports| http://localhost:5050/allure-docker-service/latest-r
 * Install NGINX webserver
 ```bash
 docker pull nginx:latest
+```
+* Install Allure reports docker service
+```
+docker pull frankescobar/allure-docker-service
 ``` 
-* Create   project folder  with any name
-* Create directory name "main" and copy the all the given artificats  
 
- 
+* Create directory name "main" and copy the all the given artificats   
 * Create empty directory reports   under main  _(main/reports)_
-*  Create empty directory allure-reports  under main. _( main/allure-reports)_
+* Create empty directory allure-reports  under main. _( main/allure-reports)_
+
 ```  
  Projectfolder/main $ ls
   allure-reports  apicall.py  api_status_codes.py  conftest.py  __pycache__  reports  test_classes.py
