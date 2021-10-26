@@ -2,7 +2,7 @@ import requests
 import api_status_codes as SC
 
 
-def doGet(url, headers):
+def doGet(url, headers)->None:
     """
     This is a low level get method includes paramers , any other business logic which will require to run for all get calls
     """
@@ -26,7 +26,7 @@ def doGet(url, headers):
    
 
 
-def doPost(url, headers):
+def doPost(url, headers)->None:
     """
     This is a low level Post method includes paramers , any other business logic which will require to run for all Post calls
     """
@@ -44,5 +44,3 @@ def doPost(url, headers):
         print(errt)
     except requests.exceptions.RequestException as err:
         print(err)
-
-    return response.status_code
