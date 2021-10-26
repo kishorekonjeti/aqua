@@ -12,7 +12,7 @@
 ```
 git clone   https://github.com/kishorekonjeti/aqua.git
 
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 create folders for reports
 
