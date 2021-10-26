@@ -1,16 +1,19 @@
 ## Assignment given by Aqua
 
 #### Prerequisites:
-NGINX docker webserver
-used latest Python 3.9 version
-Allure reports Docker to view the reports.. Steps mentioned below sections
+- NGINX docker webserver
+- Used latest Python 3.9 version(works with older versions too)
+- Allure reports Docker to view the reports.. Steps mentioned below sections
+- Pytest is test framework used.
 
 
 
 ### Installation via github
-git clone  
+```
+git clone   https://github.com/kishorekonjeti/aqua.git
 
 pip install requirements.txt
+```
 create folders for reports
 
 
