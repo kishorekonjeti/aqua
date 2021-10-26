@@ -3,8 +3,8 @@
 #### Prerequisites:
 - NGINX docker webserver
 - Used latest Python 3.9 version(works with older versions too)
-- Allure reports Docker to view the reports.. Steps mentioned below sections
-- Pytest is test framework used.
+- **Allure** reports Docker to view the reports.. Steps mentioned below sections
+- **Pytest** is test framework used.
 
 
 
@@ -33,11 +33,12 @@ Tools used to develop this assignment:-
 * Nginx server 
 * Allure reports
 ### What i did as per the assignment:
+ * **PEP8** standards followed throughout the development.
+ * Developed test cases for GET and POST api REST calls for one for Pass and one for fail case.
+ * Used Allure framework to see the resultent Reports.
+ * Used pytest framework to create tests.
+ * Added command line option --browser to supply browser name. (default to chrome)
  
- Developed test cases for GET and POST api REST calls for one for Pass and one for fail case.
- Used Allure framework to see the resultent Reports.
- Used pytest framework to create tests.
- Added command line option --browser to supply browser name. (default to chrome)
  
 ### Brief note on artifacts:
  Artifact Name | Description
@@ -86,8 +87,6 @@ pytest  -sv test_classes.py -q     --browser "edge"  --alluredir="/home/kishore/
 To see the allure reports use the below url 
 
 http://localhost:5050/allure-docker-service/latest-report
-
-`
 
 
 
