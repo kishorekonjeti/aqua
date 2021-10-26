@@ -3,8 +3,8 @@
 #### Prerequisites:
 - NGINX docker webserver
 - Used latest Python 3.9 version(works with older versions too)
-- **Allure** reports Docker to view the reports.. Steps mentioned below sections
-- **Pytest** is test framework used.
+- **Allure** reports Docker service to view the reports.. Steps mentioned below sections
+- **Pytest** Used for  test framework.
 
 
 
@@ -90,12 +90,13 @@ To see the allure reports use the below url
 http://localhost:5050/allure-docker-service/latest-report
 
 - Once done you can use the following commands for cleaning up all dockers and containers
+### Cleaning up...
 
-### Removing containers
+#### Removing containers
 ```bash
 docker rm -vf $(docker ps -a -q)
 ```
-### Removing images
+#### Deleting images
 
 To delete all the images,
 ```bash
