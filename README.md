@@ -35,6 +35,7 @@ Tools used to develop this assignment:-
 ### What i did as per the assignment:
  * **PEP8** standards followed throughout the development.
  * Developed test cases for GET and POST api REST calls for one for Pass and one for fail case.
+ * Added feature _--browser_ commandline option to mimic browser using user agent for different kind of browsers like chrome, firefox,edge.
  * Used Allure framework to see the resultent Reports.
  * Used pytest framework to create tests.
  * Added command line option --browser to supply browser name. (default to chrome)
@@ -43,13 +44,13 @@ Tools used to develop this assignment:-
 ### Brief note on artifacts:
  Artifact Name | Description
  --------------|------------------
- conftest.py | pytest framework will use this file like configuration for tests. I have used to set fixture and get the 		browsername. Also this will construct User agent to mimic the browser type.
- api_status_codes.py| Used this as kind of global constants. (User agent details,other constants) 
+ conftest.py | pytest framework will use this file like configuration for tests.<br>   - I have used to set fixture and get the command line argument --browser.  
+ api_status_codes.py| Used this as kind of global constants. _(User agent details for chrome,firefox,edge other constants)_ 
  apicall.py| Low level REST api implementation for GET and POST. So any test test it can directly call this low level function call. 
  test_classes.py| Actual tests written here. Class TestApi is the main class  grouped all api methods(GET, POST) to NGINX webserver. 
- reports| this folder contains all  .json files which are used to generate allure reports 
- allure-reports| This folder contains all the actual allure reports. Allure webserver from docker will keep checkig  for every 3 seconds for  updated reports there or not. If found any updated data , it will take automatically and render it . You  just have to point the browser tab. No need any additional allure command to see the reports (like  allure serve.. ). No need to remember any allure commands.
-URL to view allure reports| http://localhost:5050/allure-docker-service/latest-report
+ reports| this directory contains all  .json files which are used to generate allure reports 
+ allure-reports| This directory contains all the actual allure reports. Allure webserver from docker will keep checkig  for every 3 seconds for  updated reports there or not. If found any updated data , it will take automatically and render it . You  just have to point the browser tab. No need any additional allure command to see the reports (like  allure serve.. ). No need to remember any allure commands.
+URL to view allure reports| http://localhost:5050/allure-docker-service/latest-report <br> _Use this after using the allure docker service_
                  
 	 
 ### Installation steps:-
