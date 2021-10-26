@@ -89,8 +89,18 @@ To see the allure reports use the below url
 
 http://localhost:5050/allure-docker-service/latest-report
 
+- Once done you can use the following commands for cleaning up all dockers and containers
 
+### Removing containers
+```bash
+docker rm -vf $(docker ps -a -q)
+```
+### Removing images
 
+To delete all the images,
+```bash
+docker rmi -f $(docker images -a -q)
+```
 
 
 
