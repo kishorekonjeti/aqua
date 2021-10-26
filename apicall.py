@@ -1,6 +1,4 @@
 import requests
-import api_status_codes as SC
-
 
 def doGet(url, headers)->None:
     """
